@@ -1,10 +1,3 @@
-D:\React JS PHP\WebViewAndroid\bin\Debug\WebViewAndroid.dll
-D:\React JS PHP\WebViewAndroid\bin\Debug\WebViewAndroid.pdb
-D:\React JS PHP\WebViewAndroid\bin\Debug\com.companyname.webviewandroid.apk
-D:\React JS PHP\WebViewAndroid\bin\Debug\com.companyname.webviewandroid.aab
-D:\React JS PHP\WebViewAndroid\bin\Debug\com.companyname.webviewandroid-Signed.aab
-D:\React JS PHP\WebViewAndroid\bin\Debug\com.companyname.webviewandroid-Signed.apk
-D:\React JS PHP\WebViewAndroid\bin\Debug\com.companyname.webviewandroid-Signed.apk.idsig
 D:\React JS PHP\WebViewAndroid\obj\Debug\130\MonoAndroid,Version=v13.0.AssemblyAttributes.cs
 D:\React JS PHP\WebViewAndroid\obj\Debug\130\build.props
 D:\React JS PHP\WebViewAndroid\obj\Debug\130\adb.props
@@ -27,6 +20,13 @@ D:\React JS PHP\WebViewAndroid\obj\Debug\130\lp\74\jl\files.cache
 D:\React JS PHP\WebViewAndroid\obj\Debug\130\R.txt
 D:\React JS PHP\WebViewAndroid\obj\Debug\130\R.cs.flag
 D:\React JS PHP\WebViewAndroid\obj\Debug\130\WebViewAndroid.csproj.CoreCompileInputs.cache
+D:\React JS PHP\WebViewAndroid\bin\Debug\WebViewAndroid.dll
+D:\React JS PHP\WebViewAndroid\bin\Debug\WebViewAndroid.pdb
+D:\React JS PHP\WebViewAndroid\bin\Debug\com.companyname.webviewandroid.apk
+D:\React JS PHP\WebViewAndroid\bin\Debug\com.companyname.webviewandroid.aab
+D:\React JS PHP\WebViewAndroid\bin\Debug\com.companyname.webviewandroid-Signed.aab
+D:\React JS PHP\WebViewAndroid\bin\Debug\com.companyname.webviewandroid-Signed.apk
+D:\React JS PHP\WebViewAndroid\bin\Debug\com.companyname.webviewandroid-Signed.apk.idsig
 D:\React JS PHP\WebViewAndroid\obj\Debug\130\WebViewAndroid.dll
 D:\React JS PHP\WebViewAndroid\obj\Debug\130\WebViewAndroid.pdb
 D:\React JS PHP\WebViewAndroid\obj\Debug\130\android\bin\com.companyname.webviewandroid.apk

@@ -10,6 +10,7 @@ namespace WebViewAndroid
     public class MainActivity : AppCompatActivity
     {
         WebView webView;
+        private bool isBackPressedOnce = false;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -20,8 +21,17 @@ namespace WebViewAndroid
 
             webView = FindViewById<WebView>(Resource.Id.webview);
 
-            // Enable JavaScript (optional, depending on what you need)
+            // Enable JavaScript and other settings
             webView.Settings.JavaScriptEnabled = true;
+            webView.Settings.DomStorageEnabled = true;
+            webView.Settings.LoadWithOverviewMode = true;
+            webView.Settings.UseWideViewPort = true;
+
+            // Set WebViewClient to handle navigation
+            webView.SetWebViewClient(new WebViewClient());
+
+            // Set WebChromeClient for additional features
+            webView.SetWebChromeClient(new WebChromeClient());
 
             // Load Google.com
             webView.LoadUrl("https://www.google.com");
@@ -32,5 +42,37 @@ namespace WebViewAndroid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
+        public override void OnBackPressed()
+        {
+            if (webView.CanGoBack())
+            {
+                webView.GoBack();
+            }
+            else
+            {
+                ShowExitDialog();
+            }
+        }
+
+        private void ShowExitDialog()
+        {
+            // Create and show the exit confirmation dialog
+            var builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+            builder.SetTitle("Exit");
+            builder.SetMessage("Are you sure you want to exit?");
+            builder.SetPositiveButton("Yes", (sender, args) =>
+            {
+                Finish(); // Close the activity
+            });
+            builder.SetNegativeButton("No", (sender, args) =>
+            {
+                // Do nothing, just dismiss the dialog
+            });
+
+            var dialog = builder.Create();
+            dialog.Show();
+        }
+
     }
 }
